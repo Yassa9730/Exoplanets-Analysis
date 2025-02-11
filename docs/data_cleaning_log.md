@@ -8,3 +8,7 @@
     - The dataset contains metadata, wihch we handled by skippnig 96 rows.
     - Data types are a mix of `float64`, `int64`, and `object`. 
     
+### Missing Value Handling
+- Dropped columns with more than 50% missing values.
+- Filled numeric columns with the median.
+- Filled categorical columns with "unkown."
