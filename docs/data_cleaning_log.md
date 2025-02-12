@@ -83,3 +83,28 @@
 ### **3.Next Steps**
 - Clean exoplanet.csv Before Merging
 
+
+## **Exooplanet Data Cleaning**
+- **Dataset:** `eexoplanets.csv`
+- **Cleaned Version:** `exoplanets_cleaned.csv`
+- **Date:** 2/12/2025
+- **Author:** Yassa
+
+
+### **1. Issues in the Origin Dataset**
+ - The first **21 rows** contained metadata instead of actuaal data.
+ - Some columns had missing values, **but none exceeded 50%**, so all columns were retained.
+ - Numeric columns had missing values that needed **imputation**
+ - Categorical columns had missing values that needed **filling**.
+
+
+### **2. Cleaning Steps Performed**
+✅ **Checked for and remmoved metadata rows**.
+✅ **Filled missing numeric Values** with the **median**
+✅ **Filled missing categorical values** with `"unkown"`
+✅ **Saved cleaned dataset as `exoplanets_cleaned.csv`**.
+
+
+### **3. Next Steps**
+- Merge `exoplanets_cleaned.csv` with `nasa_exoplanets_cleaned.csv` and `exoplanet_eu_data.csv`.
+
