@@ -1,4 +1,4 @@
-system_name,star_name,star_mass,star_radius,star_temperature,star_metallicity,planet_name,planet_radius,planet_temperature,planet_period,planet_semimajoraxis,discovery_method,is_transiting,discovery_year
+system_name,star_name,star_mass,star_radius,star_temperature,star_metallicity,planet_name,planet_radius,planet_temperature,planet_period,semi_major_axis,discovery_method,is_transiting,discovery_year
 11 Com,11 Com,2.7,19.0,4742.0,-0.35,11 Com b,0.203,762.0,326.03,1.29,RV,0,2008.0
 11 UMi,11 UMi,1.8,24.08,4340.0,0.04,11 UMi b,0.203,762.0,516.22,1.54,RV,0,2009.0
 14 And,14 And,2.2,11.0,4813.0,-0.24,14 And b,0.203,762.0,185.84,0.83,RV,0,2008.0

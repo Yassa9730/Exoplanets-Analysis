@@ -108,3 +108,34 @@
 ### **3. Next Steps**
 - Merge `exoplanets_cleaned.csv` with `nasa_exoplanets_cleaned.csv` and `exoplanet_eu_data.csv`.
 
+## **5. Dataset Merging**
+### **Merged Version:** `merged_exoplanets.csv`
+### **Date:** 2/13/2025
+### **Author:** Yassa
+
+#### **1️⃣ Merging Process**
+✅ Combined three cleaned datasets:
+    - `nasa_exolanets_cleaned.csv`
+      - `exoplanet_eu_data.csv`
+      - `exoplanets_cleaned.csv`
+✅Used **outer Join** on `planet_name`, `star_name`, and `discovery_year`
+✅ Preserved all available data while avoiding duplicate entries
+
+#### **2️⃣ Issues Noted**
+📌 Some columns contained missing values due to differences in available data across datasets.
+📌 The **citation fields** in NASA data still contain HTML references (e.g., `<a refstr=...>`), which will be cleaned next.
+
+
+#### **2️⃣ Next Steps**
+👉 Extract author names & years from citation fields.
+👉 Remove unnecessary HTML tags while keeping useful citation info.
+👉 Verify final dataset integrity before anlysis
+
+## **6. Cleaning Citations in References**
+- **Columns Cleaned:** `pl_refname`, `st_refname`, `sy_refname`
+- **Issue:** These columns contained HTML `<a>` tags with links.
+- **Solution:** We extracted only the **author name & year**, removing extra formatting.
+- **Example Fix:**
+  - Before: `<a refstr=KUNITOMO_ET_AL__2011 href=...>Kunitomo et al. 2011</a>`
+  - After: `Kunitomo et al. 2011`
+- **Result:** The dataset now contains **clean citations** for better readability.
