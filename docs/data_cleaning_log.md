@@ -139,3 +139,26 @@
   - Before: `<a refstr=KUNITOMO_ET_AL__2011 href=...>Kunitomo et al. 2011</a>`
   - After: `Kunitomo et al. 2011`
 - **Result:** The dataset now contains **clean citations** for better readability.
+
+
+# Cleaning Log: Merged Exoplanets Dataset
+** Dataset:** `merged_exoplanets_final.csv`
+**Date:** 2/15/2025
+**Author:** Yassa
+
+## 6️⃣ Cleaning & Verification of Merged Dataset
+
+### 1️⃣ Cleaning Steps
+✅ Handled missing values:
+    - Filleed numeric columns with **median**.
+    - Filled categorical columns wiht **"unknown"**.
+  ✅ Droped **5 columns** with more than **90%% missing data**.
+  ✅ Verified final dataset strcuture (**133 columns**)
+
+  ### 2️⃣ Verification
+  ✅ Ran `info()` to confirm **correct data types**
+  ✅ Used `describe()` to ensure **numerical values are within expected ranges**.
+
+  ### 3️⃣ Next Steps
+  🚀 The dataset is **now cleaner but not final**. Further column adjustments and standardizations are before **EDA**
+
