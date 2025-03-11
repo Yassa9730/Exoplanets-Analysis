@@ -7,3 +7,45 @@ Project Participants:
 1.Rabia Zulfiqar
 2.Jesunbo Fola-Alade
 3.Yassa Azmy
+
+
+# **Exoplanet Data Analysis Report**  
+
+## **1. Introduction**  
+This report presents an analysis of exoplanetary datasets using data science techniques such as outlier detection, correlation analysis, and visualization. The goal is to derive meaningful insights into planetary characteristics and their relationships with stellar properties.  
+
+## **2. Data Cleaning and Preprocessing**  
+
+### **2.1 Handling Limit-Flagged Values**  
+- Identified **35 columns** containing limit-flagged values (e.g., `<`, `>`, `min`, `max`).  
+- Replaced flagged values with **NaN** to prevent errors in numerical computations.  
+
+### **2.2 Outlier Detection and Handling**  
+- Applied **Interquartile Range (IQR)** method:  
+  - **Lower Bound** = Q1 - 1.5 × IQR  
+  - **Upper Bound** = Q3 + 1.5 × IQR  
+- Additional techniques used:  
+  - **Modified Z-score**  
+  - **RobustScaler**  
+  - **Winsorization** to retain data integrity while handling extreme values.  
+
+## **3. Exploratory Data Analysis (EDA)**  
+
+### **3.1 Correlation Analysis**  
+#### **3.1.1 Star Mass vs. Planet Orbital Period**  
+- **Spearman’s ρ**: **0.086**  
+- **p-value**: **4.16e-76**  
+- **Interpretation**: Weak positive correlation. Higher star mass is slightly associated with longer planet orbital periods.  
+
+#### **3.1.2 Planet Radius vs. Planet Mass**  
+- **Spearman’s ρ**: **0.058**  
+- **p-value**: **9.08e-36**  
+- **Interpretation**: Very weak positive correlation.  
+
+### **3.2 Box Plot Analysis**  
+- Outlier distributions were visualized using box plots, confirming the presence of extreme values in planetary mass and radius.  
+- Winsorization was applied to adjust these values without major distortions.  
+
+## **4. Conclusion**  
+This study successfully cleaned and analyzed exoplanet data, ensuring robust numerical accuracy. While certain planetary properties exhibit weak correlations, further studies could integrate additional features and machine learning models to refine predictive capabilities.
+
