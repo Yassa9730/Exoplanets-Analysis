@@ -17,15 +17,23 @@ Streamlit Application
 Our Streamlit web app is the core user-facing feature of this project. It enables interactive exploration of the data and includes the following sections:
 
 Pages in the App
-Home: Overview of the project, team, and data source.
 
-Exploratory Analysis: Dynamic visualizations such as histograms, box plots, scatter plots, and correlation heatmaps. Users can filter by discovery year and facility.
+Our Streamlit application is organized into several pages, each focusing on a specific aspect of the exoplanet data analysis process:
 
-Data Cleaning Insights: Summarizes cleaning steps with selectable variable views and explanations of handling techniques.
+Home.py – Home Page
+Provides an introduction to the project, background on exoplanets, and an overview of the app’s purpose and functionality.
 
-Facility Finder (Coming Soon): A simple tool to look up discoveries by facility and filter by time period.
+pages/1_Exploratory_Analysis.py – Exploratory Analysis
+Presents the raw dataset and offers basic descriptive statistics and exploratory plots to help users understand the underlying structure and distribution of the data.
 
-Model (On Hold): Planned integration of a predictive model for estimating exoplanet mass or radius.
+pages/2_Visualisations.py – Key Visualizations
+Showcases important trends, comparisons, and highlights discovered through the analysis. This includes charts on discovery methods, exoplanet sizes, orbital patterns, and more.
+
+pages/3_Model_Predictions.py – Interactive Predictions
+Allows users to perform custom analysis using sliders and filters. Users can explore how changing different features affects planetary classification or habitability potential (if applicable).(On Hold)
+
+pages/4_Dashboard.py – Methodology & Sources
+Summarizes the methodology used in the project, outlines key assumptions and limitations, and provides links to data sources and references.
 
 Technologies Used in the App
 Streamlit for the frontend and UI
