@@ -1,28 +1,48 @@
 import streamlit as st
 
+# Page configuration
 st.set_page_config(
     page_title="Home",
     page_icon="🏠",
     layout="wide"
 )
 
-st.title("""
-Exploring Exoplanets: Analyzing Exoplanet Data with Python
-""")
+# Title
+st.title("Exploring Exoplanets: Analyzing Exoplanet Data with Python")
 
-st.header("Introduction")
-st.text("""
-Exoplanets, or extrasolar planets, are planets that exist outside our solar system, orbiting distant stars. Since the first confirmed discovery in 1992, thousands of exoplanets have been identified using various detection methods, such as the transit method and radial velocity. These discoveries have revolutionized our understanding of planetary systems, shedding light on the diversity of planets beyond our own.
-
-In this project, we aim to perform Exploratory Data Analysis (EDA) on exoplanets using Python. By leveraging libraries such as pandas, matplotlib, seaborn, and Streamlit, we will analyze an exoplanet dataset to uncover key patterns and relationships. Our goal is to visualize trends, explore correlations between planetary and stellar properties, and gain insights into the characteristics of known exoplanets.
-""")
-
-st.write("## Objectives")
+# Introduction
+st.header("🌌 Introduction")
 st.write("""
-- To understand the distribution of exoplanet properties such as mass, radius, and orbital period.
-- To analyze how exoplanets are detected and how discoveries have evolved over time.
-- To explore the relationship between exoplanets and their host stars.
-- To create an interactive Streamlit app that allows users to explore and visualize exoplanet data dynamically.
+Exoplanets, or extrasolar planets, are planets that orbit stars outside our solar system. Since the first confirmed 
+discovery in 1992, thousands of exoplanets have been identified using detection methods such as the **transit method**, 
+**radial velocity**, and others. These findings have greatly expanded our knowledge of planetary systems in the universe.
+
+This project focuses on conducting **Exploratory Data Analysis (EDA)** on exoplanet data using Python, uncovering key patterns 
+and relationships in the dataset. Our aim is to visualize distributions, explore correlations between planetary and stellar 
+properties, and provide an interactive interface to explore the data.
 """)
 
+# Dataset Info
+st.header("🧬 Dataset")
+st.write("""
+We use publicly available datasets compiled from **NASA's Exoplanet Archive** and other research databases. 
+These datasets contain detailed observations of confirmed exoplanets, their host stars, and discovery metadata 
+(e.g., discovery method, year, and facility).
+""")
 
+# Objectives
+st.header("🎯 Project Objectives")
+st.markdown("""
+- Understand the distribution of key exoplanet properties such as **mass**, **radius**, and **orbital period**.
+- Analyze how discovery methods and trends have changed over time.
+- Explore the relationship between planetary features and their host stars.
+- Create an **interactive Streamlit dashboard** that allows users to visualize and explore the dataset intuitively.
+""")
+
+# Team
+st.header("👩‍💻 Project Team")
+st.markdown("""
+- Rabia Zulfiqar  
+- Jesunbo Fola-Alade  
+- Yassa Azmy
+""")
