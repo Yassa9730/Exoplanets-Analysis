@@ -1,6 +1,6 @@
 # 🌌 Exoplanet Explorer: A Streamlit Data Analysis App
 
-**Video Demo:** [URL HERE]  
+**Video Demo:** (https://youtu.be/lRxHvYaquxA)  
 **GitHub Repository:** https://github.com/Yassa9730/Exoplanets-Analysis
 
 ---
